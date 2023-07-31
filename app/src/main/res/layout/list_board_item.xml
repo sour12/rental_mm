@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="SM8350_#1" />
+
+    <LinearLayout
+        android:id="@+id/list_status_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/list_name">
+        <ImageView
+            android:id="@+id/list_status_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_status_idle"/>
+        <TextView
+            android:id="@+id/list_status_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="사용" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/list_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/list_status_layout"
+        android:text="호성민" />
+
+    <ImageButton
+        android:id="@+id/list_setting"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_item_setting"/>
+</RelativeLayout>
